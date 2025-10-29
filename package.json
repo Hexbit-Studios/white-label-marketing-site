@@ -1,0 +1,25 @@
+{
+  "name": "white-label-landing-page",
+  "version": "1.0.0",
+  "description": "A stunning, fully customizable landing page template with animated starfield and parallax effects",
+  "scripts": {
+    "dev": "python3 -m http.server 8000",
+    "start": "python3 -m http.server 8000"
+  },
+  "keywords": [
+    "landing-page",
+    "template",
+    "white-label",
+    "parallax",
+    "starfield",
+    "responsive",
+    "marketing"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/white-label-landing-page.git"
+  },
+  "homepage": "https://github.com/your-username/white-label-landing-page#readme"
+}

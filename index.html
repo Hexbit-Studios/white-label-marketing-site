@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title data-config="site.title">
+      Subsisters - The Last Stars in a Dying Cosmos
+    </title>
+    <meta
+      name="description"
+      data-config="site.description"
+      content="Sailor Moon meets Vampire Survivors with a synth-wave cosmic aesthetic. Build your deck, choose your sister, and fight against The Eclipse."
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="favicon.ico"
+      data-config="advanced.faviconPath"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&family=Rajdhani:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome (optional - only needed if using icon-based social links) -->
+    <!-- Uncomment and add your kit ID in config.js to use icon links -->
+    <!-- <script src="https://kit.fontawesome.com/YOUR-KIT-ID.js" crossorigin="anonymous"></script> -->
+
+    <!-- Load configuration first -->
+    <script src="config.js"></script>
+  </head>
+  <body>
+    <!-- Hero Section -->
+    <section id="hero">
+      <div class="hero-content">
+        <img id="hero-logo" src="assets/logo.svg" alt="Logo" />
+        <h1 class="hero-title" data-config="product.name">My Game</h1>
+        <p class="hero-tagline" data-config="site.tagline">My Game Tagline</p>
+      </div>
+      <div class="scroll-indicator">
+        <span>Scroll to Explore</span>
+        <div class="arrow">↓</div>
+      </div>
+    </section>
+
+    <!-- Game Info Section -->
+    <section id="game-info">
+      <div class="content-wrapper">
+        <div class="info-block">
+          <h2>What is <span data-config="product.name">Subsisters</span>?</h2>
+          <p class="highlight" data-config="product.shortDescription">
+            Bullet heaven meets deck building
+          </p>
+
+          <p data-config="product.fullDescription">
+            A new game from
+            <a href="https://hexbitstudios.com">Hexbit Studios</a> that combines
+            deck building with bullet heaven action all wrapped up in a
+            synth-wave cosmic aesthetic.
+          </p>
+          <p data-config="product.detailedDescription">
+            Build your deck before each run, choose one of nine planetary
+            sisters, and survive waves of corrupted constellations in fast-paced
+            bullet heaven combat.
+          </p>
+        </div>
+
+        <div class="features-grid" id="features-container">
+          <!-- Features will be dynamically generated from config.js -->
+        </div>
+
+        <div class="info-block pillars">
+          <h2 data-config="story.headline">The Eclipse is Coming</h2>
+          <p class="highlight" data-config="story.tagline">
+            Subsist and survive! Resist against the all-consuming void!
+          </p>
+          <p data-config="story.description">
+            A void is consuming the stars. The nine planetary sisters are
+            humanity's last hope. Choose your constellation, build your arsenal,
+            and fight back against the darkness.
+          </p>
+        </div>
+
+        <div class="cta-section hidden" id="cta-section">
+          <!-- CTA will be dynamically generated from config.js if enabled -->
+        </div>
+
+        <footer>
+          <p>
+            &copy; <span data-config="site.year">2025</span>
+            <span data-config="site.author">Hexbit Studios</span>. All rights
+            reserved.
+          </p>
+          <div class="social-links" id="social-links">
+            <!-- Social links will be dynamically generated from config.js -->
+          </div>
+        </footer>
+      </div>
+    </section>
+
+    <!-- Load scripts in order: config → config-loader → main script -->
+    <script src="config-loader.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

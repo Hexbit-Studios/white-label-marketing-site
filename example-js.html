@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Config.js Examples - White Label Landing Page</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          sans-serif;
+        line-height: 1.6;
+        color: #333;
+        background: #f5f5f5;
+        padding: 2rem;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        background: white;
+        padding: 3rem;
+        border-radius: 12px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        color: #0066ff;
+        margin-bottom: 1rem;
+        font-size: 2.5rem;
+      }
+
+      h2 {
+        color: #333;
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 2px solid #0066ff;
+        font-size: 1.8rem;
+      }
+
+      h3 {
+        color: #555;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        font-size: 1.3rem;
+      }
+
+      p {
+        margin-bottom: 1rem;
+        color: #666;
+      }
+
+      pre {
+        background: #2d2d2d;
+        color: #f8f8f2;
+        padding: 1.5rem;
+        border-radius: 8px;
+        overflow-x: auto;
+        margin: 1.5rem 0;
+        font-size: 0.9rem;
+        line-height: 1.5;
+      }
+
+      code {
+        background: #f4f4f4;
+        padding: 0.2rem 0.4rem;
+        border-radius: 3px;
+        font-family: "Courier New", monospace;
+        font-size: 0.9em;
+      }
+
+      .tip {
+        background: #e7f3ff;
+        border-left: 4px solid #0066ff;
+        padding: 1rem 1.5rem;
+        margin: 1.5rem 0;
+        border-radius: 4px;
+      }
+
+      .warning {
+        background: #fff3cd;
+        border-left: 4px solid #ffc107;
+        padding: 1rem 1.5rem;
+        margin: 1.5rem 0;
+        border-radius: 4px;
+      }
+
+      .example-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin: 2rem 0;
+      }
+
+      .example-card {
+        background: #f9f9f9;
+        padding: 1.5rem;
+        border-radius: 8px;
+        border: 1px solid #e0e0e0;
+      }
+
+      .example-card h4 {
+        color: #0066ff;
+        margin-bottom: 0.5rem;
+      }
+
+      ul {
+        margin-left: 2rem;
+        margin-bottom: 1rem;
+      }
+
+      li {
+        margin-bottom: 0.5rem;
+        color: #666;
+      }
+
+      a {
+        color: #0066ff;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .back-link {
+        display: inline-block;
+        margin-bottom: 2rem;
+        padding: 0.5rem 1rem;
+        background: #0066ff;
+        color: white;
+        border-radius: 6px;
+        text-decoration: none;
+      }
+
+      .back-link:hover {
+        background: #0052cc;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <a href="index.html" class="back-link">← Back to Landing Page</a>
+
+      <h1>🎨 Config.js Examples & Use Cases</h1>
+      <p>
+        This page provides ready-to-use config.js examples for different types
+        of projects. Simply copy the relevant sections into your
+        <code>config.js</code> file!
+      </p>
+
+      <div class="tip">
+        <strong>💡 Tip:</strong> You can mix and match sections from different
+        examples to create your perfect configuration.
+      </div>
+
+      <!-- Gaming Example -->
+      <h2>🎮 Gaming (Current Default)</h2>
+      <p>Perfect for indie games, game studios, or gaming products.</p>
+
+      <h3>Site Configuration</h3>
+      <pre>
+site: {
+  title: "Subsisters - The Last Stars in a Dying Cosmos",
+  description: "Sailor Moon meets Vampire Survivors. Build your deck, choose your sister, and fight!",
+  tagline: "The Last Stars in a Dying Cosmos",
+  url: "https://subsisters.com",
+  author: "Hexbit Studios",
+  year: "2025",
+}</pre
+      >
+
+      <h3>Color Scheme (Cyberpunk/Synthwave)</h3>
+      <pre>
+visuals: {
+  colors: {
+    primary: "#00fff9",     // Cyan
+    secondary: "#ff00ff",   // Magenta
+    accent: "#7928ca",      // Purple
+    dark: "#0a0e27",
+    darker: "#050714",
+    text: "#e0e0e0",
+  }
+}</pre
+      >
+
+      <!-- SaaS Example -->
+      <h2>💼 SaaS Application</h2>
+      <p>
+        Clean, professional configuration for software products and services.
+      </p>
+
+      <h3>Site Configuration</h3>
+      <pre>
+site: {
+  title: "TaskFlow - Project Management Simplified",
+  description: "Streamline your projects with AI-powered task management. Collaborate in real-time.",
+  tagline: "Project Management Without the Chaos",
+  url: "https://taskflow.app",
+  author: "TaskFlow Inc",
+  year: "2025",
+}
+
+product: {
+  name: "TaskFlow",
+  shortDescription: "Smart project management",
+  fullDescription: "Manage projects, collaborate with your team, and hit deadlines with AI-powered insights.",
+  detailedDescription: "TaskFlow combines intelligent task prioritization with real-time collaboration tools.",
+}</pre
+      >
+
+      <h3>Features (SaaS Focused)</h3>
+      <pre>
+features: [
+  {
+    icon: "fa-solid fa-list-check",
+    title: "Smart Task Management",
+    description: "AI-powered prioritization keeps your team focused on what matters.",
+    highlight: "Never miss a deadline.",
+  },
+  {
+    icon: "fa-solid fa-users",
+    title: "Team Collaboration",
+    description: "Real-time updates, comments, and file sharing in one place.",
+    highlight: "Everyone stays in sync.",
+  },
+  {
+    icon: "fa-solid fa-chart-line",
+    title: "Analytics Dashboard",
+    description: "Track progress and productivity with beautiful insights.",
+    highlight: "Make data-driven decisions.",
+  },
+  {
+    icon: "fa-solid fa-mobile-screen",
+    title: "Mobile Apps",
+    description: "Work from anywhere with native iOS and Android apps.",
+    highlight: "Productivity on the go.",
+  },
+]</pre
+      >
+
+      <h3>Color Scheme (Professional Blue)</h3>
+      <pre>
+visuals: {
+  colors: {
+    primary: "#0066ff",     // Blue
+    secondary: "#00cc88",   // Green
+    accent: "#6600ff",      // Purple
+    dark: "#0a0e1a",
+    darker: "#050508",
+    text: "#e0e0e0",
+  }
+}</pre
+      >
+
+      <h3>CTA (With Sign-up)</h3>
+      <pre>
+cta: {
+  enabled: true,
+  headline: "Ready to Get Started?",
+  subheading: "Join thousands of teams using TaskFlow",
+  buttons: [
+    {
+      text: "Start Free Trial",
+      url: "https://taskflow.app/signup",
+      style: "primary",
+    },
+    {
+      text: "Watch Demo",
+      url: "https://taskflow.app/demo",
+      style: "secondary",
+    },
+  ],
+}</pre
+      >
+
+      <!-- Portfolio Example -->
+      <h2>🎨 Portfolio / Personal Brand</h2>
+      <p>Showcase your work and skills with a personal touch.</p>
+
+      <h3>Site Configuration</h3>
+      <pre>
+site: {
+  title: "Alex Chen - Full Stack Developer",
+  description: "Creative developer building beautiful web experiences with React, Node.js, and TypeScript.",
+  tagline: "Building Digital Experiences",
+  url: "https://alexchen.dev",
+  author: "Alex Chen",
+  year: "2025",
+}
+
+product: {
+  name: "Alex Chen",
+  shortDescription: "Full Stack Developer",
+  fullDescription: "I create beautiful, performant web applications using modern technologies.",
+  detailedDescription: "Specializing in React, Node.js, and cloud architecture with 5+ years experience.",
+}</pre
+      >
+
+      <h3>Features (Skills/Services)</h3>
+      <pre>
+features: [
+  {
+    icon: "fa-solid fa-code",
+    title: "Web Development",
+    description: "Full-stack applications with React, Node.js, and TypeScript.",
+    highlight: "Modern, scalable solutions.",
+  },
+  {
+    icon: "fa-solid fa-mobile",
+    title: "Mobile Apps",
+    description: "Cross-platform mobile apps with React Native.",
+    highlight: "iOS and Android.",
+  },
+  {
+    icon: "fa-solid fa-palette",
+    title: "UI/UX Design",
+    description: "User-centered design with Figma and Adobe Creative Suite.",
+    highlight: "Beautiful interfaces.",
+  },
+  {
+    icon: "fa-solid fa-cloud",
+    title: "Cloud Architecture",
+    description: "Scalable infrastructure with AWS and Docker.",
+    highlight: "Enterprise-grade solutions.",
+  },
+]</pre
+      >
+
+      <h3>Color Scheme (Minimal Dark)</h3>
+      <pre>
+visuals: {
+  colors: {
+    primary: "#ffffff",     // White
+    secondary: "#888888",   // Gray
+    accent: "#444444",      // Dark Gray
+    dark: "#1a1a1a",
+    darker: "#000000",
+    text: "#cccccc",
+  }
+}</pre
+      >
+
+      <h3>CTA (Contact/Hire)</h3>
+      <pre>
+cta: {
+  enabled: true,
+  headline: "Let's Work Together",
+  subheading: "Available for freelance projects and consulting",
+  buttons: [
+    {
+      text: "View Portfolio",
+      url: "#portfolio",
+      style: "primary",
+    },
+    {
+      text: "Contact Me",
+      url: "mailto:hello@alexchen.dev",
+      style: "secondary",
+    },
+  ],
+}</pre
+      >
+
+      <!-- E-commerce Example -->
+      <h2>🛍️ Product / E-commerce</h2>
+      <p>Showcase a physical or digital product.</p>
+
+      <h3>Site Configuration</h3>
+      <pre>
+site: {
+  title: "Aurora - Premium Wireless Earbuds",
+  description: "Studio-quality sound in a sleek, comfortable design. 30-hour battery, active noise cancellation.",
+  tagline: "Sound That Moves You",
+  url: "https://aurorabuds.com",
+  author: "Aurora Audio",
+  year: "2025",
+}
+
+product: {
+  name: "Aurora Earbuds",
+  shortDescription: "Premium wireless audio",
+  fullDescription: "Experience studio-quality sound with our flagship wireless earbuds featuring active noise cancellation and 30-hour battery life.",
+  detailedDescription: "Aurora earbuds combine cutting-edge audio technology with elegant design for the perfect listening experience.",
+}</pre
+      >
+
+      <h3>Features (Product Features)</h3>
+      <pre>
+features: [
+  {
+    icon: "fa-solid fa-volume-high",
+    title: "Studio Quality Sound",
+    description: "11mm dynamic drivers deliver rich, detailed audio across all frequencies.",
+    highlight: "Hear every detail.",
+  },
+  {
+    icon: "fa-solid fa-ban",
+    title: "Active Noise Cancellation",
+    description: "Advanced ANC blocks up to 35dB of ambient noise.",
+    highlight: "Your own private concert.",
+  },
+  {
+    icon: "fa-solid fa-battery-full",
+    title: "30-Hour Battery",
+    description: "8 hours per charge, plus 22 hours with the charging case.",
+    highlight: "All-day listening.",
+  },
+  {
+    icon: "fa-solid fa-droplet",
+    title: "Water Resistant",
+    description: "IPX5 rating protects against sweat and rain.",
+    highlight: "Built for your lifestyle.",
+  },
+]</pre
+      >
+
+      <h3>Color Scheme (Premium Gold)</h3>
+      <pre>
+visuals: {
+  colors: {
+    primary: "#d4af37",     // Gold
+    secondary: "#ffffff",   // White
+    accent: "#8b7355",      // Bronze
+    dark: "#1a1612",
+    darker: "#0a0806",
+    text: "#e8e0d5",
+  }
+}</pre
+      >
+
+      <h3>CTA (Buy Now)</h3>
+      <pre>
+cta: {
+  enabled: true,
+  headline: "Ready to Upgrade Your Audio?",
+  subheading: "Free shipping on all orders • 30-day returns",
+  buttons: [
+    {
+      text: "Buy Now - $199",
+      url: "https://aurorabuds.com/buy",
+      style: "primary",
+    },
+    {
+      text: "Learn More",
+      url: "#features",
+      style: "secondary",
+    },
+  ],
+}</pre
+      >
+
+      <!-- Event/Conference Example -->
+      <h2>🎤 Event / Conference</h2>
+      <p>Promote an upcoming event, conference, or meetup.</p>
+
+      <h3>Site Configuration</h3>
+      <pre>
+site: {
+  title: "DevCon 2026 - The Future of Code",
+  description: "Join 5,000+ developers for 3 days of talks, workshops, and networking. June 15-17, San Francisco.",
+  tagline: "Where Developers Shape Tomorrow",
+  url: "https://devcon2026.com",
+  author: "DevCon Organizers",
+  year: "2025",
+}
+
+product: {
+  name: "DevCon 2026",
+  shortDescription: "Premier developer conference",
+  fullDescription: "Three days of cutting-edge talks, hands-on workshops, and networking with industry leaders.",
+  detailedDescription: "DevCon brings together developers from around the world to learn, share, and build the future of technology.",
+}</pre
+      >
+
+      <h3>Features (Event Highlights)</h3>
+      <pre>
+features: [
+  {
+    icon: "fa-solid fa-microphone",
+    title: "50+ Expert Speakers",
+    description: "Learn from industry leaders, open-source maintainers, and innovators.",
+    highlight: "World-class content.",
+  },
+  {
+    icon: "fa-solid fa-users",
+    title: "5,000+ Attendees",
+    description: "Network with developers from 50+ countries and hundreds of companies.",
+    highlight: "Build your network.",
+  },
+  {
+    icon: "fa-solid fa-laptop-code",
+    title: "Hands-on Workshops",
+    description: "Deep-dive workshops on React, AI, Cloud, Security, and more.",
+    highlight: "Learn by doing.",
+  },
+  {
+    icon: "fa-solid fa-briefcase",
+    title: "Job Fair",
+    description: "Meet hiring managers from top tech companies.",
+    highlight: "Advance your career.",
+  },
+]</pre
+      >
+
+      <h3>CTA (Register)</h3>
+      <pre>
+cta: {
+  enabled: true,
+  headline: "Secure Your Spot",
+  subheading: "Early bird tickets on sale • Save $200",
+  buttons: [
+    {
+      text: "Register Now",
+      url: "https://devcon2026.com/register",
+      style: "primary",
+    },
+    {
+      text: "View Schedule",
+      url: "https://devcon2026.com/schedule",
+      style: "secondary",
+    },
+  ],
+}</pre
+      >
+
+      <!-- Color Schemes Section -->
+      <h2>🎨 Additional Color Schemes</h2>
+      <div class="example-grid">
+        <div class="example-card">
+          <h4>Ocean Blue</h4>
+          <pre>
+colors: {
+  primary: "#00d4ff",
+  secondary: "#0099ff",
+  accent: "#0055aa",
+}</pre
+          >
+        </div>
+
+        <div class="example-card">
+          <h4>Forest Green</h4>
+          <pre>
+colors: {
+  primary: "#00ff88",
+  secondary: "#88ff00",
+  accent: "#00aa55",
+}</pre
+          >
+        </div>
+
+        <div class="example-card">
+          <h4>Sunset Orange</h4>
+          <pre>
+colors: {
+  primary: "#ff4400",
+  secondary: "#ff0044",
+  accent: "#cc0044",
+}</pre
+          >
+        </div>
+
+        <div class="example-card">
+          <h4>Royal Purple</h4>
+          <pre>
+colors: {
+  primary: "#aa00ff",
+  secondary: "#ff00aa",
+  accent: "#6600cc",
+}</pre
+          >
+        </div>
+
+        <div class="example-card">
+          <h4>Mint Fresh</h4>
+          <pre>
+colors: {
+  primary: "#00ffcc",
+  secondary: "#00ccaa",
+  accent: "#009977",
+}</pre
+          >
+        </div>
+
+        <div class="example-card">
+          <h4>Cherry Red</h4>
+          <pre>
+colors: {
+  primary: "#ff0055",
+  secondary: "#ff3377",
+  accent: "#cc0044",
+}</pre
+          >
+        </div>
+      </div>
+
+      <!-- Tips Section -->
+      <h2>💡 Customization Tips</h2>
+
+      <h3>1. Start Simple</h3>
+      <p>
+        Update the basic info first (title, tagline, product name), then
+        gradually customize colors and features.
+      </p>
+
+      <h3>2. Keep Colors Consistent</h3>
+      <p>
+        Choose colors that work well together. Use tools like
+        <a href="https://coolors.co" target="_blank">Coolors.co</a> to generate
+        harmonious palettes.
+      </p>
+
+      <h3>3. Test on Mobile</h3>
+      <p>
+        Always test your site on mobile devices. Most visitors will view it on
+        phones!
+      </p>
+
+      <h3>4. Optimize Performance</h3>
+      <div class="tip">
+        <strong>💡 Pro Tip:</strong> If your site feels slow, reduce the number
+        of stars:
+        <pre style="margin-top: 0.5rem">
+visuals: {
+  starfield: { numStars: 100 }  // Default: 200
+}</pre
+        >
+      </div>
+
+      <div class="warning">
+        <strong>⚠️ Remember:</strong> After editing config.js, hard refresh your
+        browser (Ctrl+Shift+R or Cmd+Shift+R) to see changes!
+      </div>
+
+      <!-- Quick Links -->
+      <h2>📚 More Resources</h2>
+      <ul>
+        <li>
+          <a href="CUSTOMIZATION.md">Complete Customization Guide</a> - Detailed
+          documentation
+        </li>
+        <li>
+          <a href="GETTING-STARTED.md">Getting Started</a> - Step-by-step
+          tutorial
+        </li>
+        <li>
+          <a href="QUICK-REFERENCE.md">Quick Reference</a> - Command cheat sheet
+        </li>
+        <li>
+          <a href="https://fontawesome.com/icons" target="_blank"
+            >Font Awesome Icons</a
+          >
+          - Browse all icons
+        </li>
+        <li>
+          <a href="https://coolors.co" target="_blank">Coolors</a> - Color
+          palette generator
+        </li>
+      </ul>
+
+      <div
+        style="
+          margin-top: 3rem;
+          padding-top: 2rem;
+          border-top: 2px solid #e0e0e0;
+        "
+      >
+        <p style="text-align: center; color: #999">
+          Happy customizing! Make this template your own. 🎨
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

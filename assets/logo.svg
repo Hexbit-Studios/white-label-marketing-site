@@ -1,0 +1,11 @@
+<svg width="400" height="120" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="400" height="120" fill="none"/>
+  
+  <!-- Logo Text -->
+  <text x="200" y="70" font-family="Arial, sans-serif" font-size="48" font-weight="bold" fill="#4A90E2" text-anchor="middle">YOUR LOGO</text>
+  
+  <!-- Subtitle -->
+  <text x="200" y="95" font-family="Arial, sans-serif" font-size="16" fill="#2ECC71" text-anchor="middle">Replace with your logo</text>
+</svg>
+
