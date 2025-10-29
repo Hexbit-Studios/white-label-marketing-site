@@ -510,17 +510,11 @@ A: Yes! MIT License allows commercial use.
 **Q: Do I need coding experience?**  
 A: Basic editing of `config.js` is all you need. See `GETTING-STARTED.md` for help.
 
-**Q: Can I remove the starfield or parallax?**  
-A: Yes! Set `enableStarfield: false` or `enableParallax: false` in config.
-
 **Q: How do I add more features than 4?**  
 A: Just add more objects to the `features` array in config.js. The grid will adapt.
 
 **Q: Can I change the fonts?**  
 A: Yes, but it requires editing `index.html` and `styles.css`. Google Fonts is used by default.
-
-**Q: How much does hosting cost?**  
-A: Free on Vercel! Custom domains cost ~$10-15/year.
 
 **Q: Can I add more pages?**  
 A: This is a single-page template, but you can create additional HTML files and link to them.
