@@ -7,12 +7,11 @@ Fast access to commands, settings, and common tasks.
 ## 🚀 Quick Start (5 Minutes)
 
 ```bash
-# 1. Clone or download the template
-git clone https://github.com/your-username/white-label-landing-page.git
-cd white-label-landing-page
+# 1. Dwnload the template
+Dowload and extract ZIP
 
-# 2. Add your logo files to assets/
-cp your-logos/* assets/
+# 2. Add your logo file to assets/
+cp your-logos.png assets/
 
 # 3. Edit config.js
 vim config.js  # or use any editor
@@ -180,22 +179,6 @@ npx http-server -p 8000
 php -S localhost:8000
 ```
 
-### Test on Mobile
-
-```bash
-# Find your local IP
-# Mac:
-ipconfig getifaddr en0
-
-# Linux:
-hostname -I
-
-# Windows:
-ipconfig
-
-# Then on phone: http://YOUR-IP:8000
-```
-
 ---
 
 ## 🔧 Common Customizations
@@ -205,8 +188,6 @@ ipconfig
 ```javascript
 // In config.js
 advanced: {
-  enableStarfield: false,        // No stars
-  enableParallax: false,         // Static logo
   enableScrollAnimations: false, // No fade-ins
 }
 ```
@@ -288,31 +269,6 @@ git push
 
 ---
 
-## 🌐 DNS Records (for Custom Domain)
-
-### NameCheap
-
-| Type  | Host | Value                |
-| ----- | ---- | -------------------- |
-| A     | @    | 76.76.21.21          |
-| CNAME | www  | cname.vercel-dns.com |
-
-### Cloudflare
-
-Same as above, but:
-
-- Ensure "Proxy status" is OFF (gray cloud)
-- Or use Cloudflare Pages instead
-
-### GoDaddy
-
-| Type  | Name | Value                | TTL |
-| ----- | ---- | -------------------- | --- |
-| A     | @    | 76.76.21.21          | 1h  |
-| CNAME | www  | cname.vercel-dns.com | 1h  |
-
----
-
 ## 🐛 Debugging
 
 ### Check Config Loading
@@ -371,16 +327,6 @@ node -c config.js
 # → pagespeed.web.dev
 # → gtmetrix.com
 # → webpagetest.org
-```
-
-### Reduce Stars (if slow)
-
-```javascript
-visuals: {
-  starfield: {
-    numStars: 50;
-  } // Default: 200
-}
 ```
 
 ---
@@ -531,7 +477,6 @@ git checkout HEAD~1 config.js
 
   - `CUSTOMIZATION.md` - Complete guide
   - `GETTING-STARTED.md` - Beginner tutorial
-  - `DEPLOYMENT.md` - Production guide
   - `SOCIAL-MEDIA-TAGS.md` - Social setup
 
 - **Tools**
@@ -544,5 +489,3 @@ git checkout HEAD~1 config.js
 **Need more help?** Check the full documentation files!
 
 **Quick question?** Check browser console for errors (F12).
-
-**Ready to launch?** See `DEPLOYMENT.md`! 🚀

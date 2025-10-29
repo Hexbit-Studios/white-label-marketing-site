@@ -64,14 +64,9 @@ white-label-marketing-site/
 
 ## 🚀 Quick Start
 
-### 1. **Clone or Download**
+### 1. **Download**
 
-```bash
-git clone https://github.com/your-username/white-label-landing-page.git
-cd white-label-landing-page
-```
-
-Or download as ZIP and extract.
+Download this repository as ZIP using the code button above and extract.
 
 ### 2. **Customize Your Site**
 
@@ -155,7 +150,7 @@ npx http-server -p 8000
 5. Click "Deploy"
 6. Done! Your site is live in ~30 seconds
 
-See `DEPLOYMENT.md` for detailed instructions and domain setup.
+You should also be able to deploy this to GitHub pages or any other static site hosting platform.
 
 ---
 
@@ -167,7 +162,6 @@ Comprehensive guides for every aspect:
 | -------------------------- | ------------------------------------------ |
 | **`CUSTOMIZATION.md`**     | Complete guide to customizing every aspect |
 | **`GETTING-STARTED.md`**   | Step-by-step setup for beginners           |
-| **`DEPLOYMENT.md`**        | Deploy to Vercel and connect your domain   |
 | **`QUICK-REFERENCE.md`**   | Quick command reference and checklist      |
 | **`SOCIAL-MEDIA-TAGS.md`** | Setup social sharing cards                 |
 
@@ -203,7 +197,6 @@ Everything is configured in **`config.js`**. Here's what you can customize:
 
 - Enable/disable scroll animations
 - Optional Font Awesome integration (for icons)
-- Google Analytics (optional)
 - Fully functional without any external dependencies
 
 **See `CUSTOMIZATION.md` for complete documentation!**
@@ -265,7 +258,6 @@ This template is perfect for:
 
 ### Performance
 
-- 60 FPS animations
 - Optimized rendering
 - Lazy loading where appropriate
 - ~100KB total (before images)
@@ -276,11 +268,7 @@ This template is perfect for:
 
 ### Gaming (Default)
 
-The template comes pre-configured with a gaming example (Subsisters). Perfect for:
-
-- Bullet heaven games
-- Roguelikes
-- Indie titles
+The template comes pre-configured with a gaming example. Perfect for indie titles!
 
 ### SaaS Application
 
